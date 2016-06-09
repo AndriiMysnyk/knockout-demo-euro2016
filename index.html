@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>KnockOut Demo</title>
+		<link rel="stylesheet" type="text/css" href="styles/demo.css" />
+	</head>
+	<body>
+		<div class="demo-container" id="bind-container">
+			<div class="demo-list">
+				<div data-bind="foreach: items">
+					<div class="demo-media-items-block">
+						<div class="demo-media-name" data-bind="text: formatDate() + formatTime()"></div>
+						<div class="demo-media-name" data-bind="text: team1"></div>
+						<div class="demo-media-name" data-bind="text: team2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="bower_components/knockout/dist/knockout.debug.js"></script>
+		<script type="text/javascript" src="scripts/demo.itemMatchViewModel.js"></script>
+		<script type="text/javascript" src="scripts/demo.listMatchViewModel.js"></script>
+		<script type="text/javascript" src="scripts/demo.data.js"></script>
+		<script type="text/javascript" src="scripts/demo.js"></script>
+	</body>
+</html>
